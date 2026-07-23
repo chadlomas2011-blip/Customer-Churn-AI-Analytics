@@ -31,4 +31,21 @@ An online subscription business was experiencing high customer churn, leading to
 
 ## Key Business Recommendations
 1. **Billing Interventions:** Address the ~35% of customer complaints tied to unexpected price hikes by introducing automated billing alerts prior to contract renewals.
-2. **Technical Support Escalation:** Wi-Fi speed and stability issues account for high churn intent; flag recurring drops for prioritized tier-2 tech support.
+2. **Technical Support Escalation:** Wi-Fi speed and stability issues account for high churn intent; flag recurring drops for prioritized tier-2 tech support.# 🕸️ Automated Web Scraper & Market Intelligence Engine
+
+## Project Overview
+Built an automated Python web-scraping and data extraction pipeline using `BeautifulSoup` and `requests`. The engine parses raw HTML from live e-commerce listings, cleans unstructured text into numerical data using regex, and calculates key pricing and inventory analytics.
+
+## Key Scraped Market Metrics
+* **Total Products Analyzed:** 20 live product listings
+* **Average Market Price:** $38.05
+* **Price Range:** $13.99 – $57.25
+
+## Tech Stack
+* **Language:** Python (`pandas`, `BeautifulSoup`, `requests`, `re`)
+* **Environment:** Google Colab
+* **Data Processing:** HTML Parsing, String Cleaning, Regular Expressions (Regex), Descriptive Analytics
+
+## Strategic Business Value
+Demonstrates automated market research capability—enabling businesses to track competitor pricing, product availability, and positioning in real time without manual data collection.
+
