@@ -81,5 +81,22 @@ Engineered a relational SQL database schema in Python (`sqlite3`) to model multi
 * **Environment:** Google Colab
 
 ## Strategic Business Value
-Enables executive decision-makers to identify top-tier customer cohorts, optimize acquisition spend, and target high-LTV market segments without relying on manual reporting tools.
+Enables executive decision-makers to identify top-tier customer cohorts, optimize acquisition spend, and target high-LTV market segments without relying on manual reporting tools.# 📈 Executive Business Intelligence & Data Visualization Dashboard
+
+## Project Overview
+Engineered an automated data visualization engine in Python (`matplotlib`, `seaborn`, `pandas`) to transform multi-divisional financial and sales metrics into an executive-ready dashboard. Generated line charts, comparative bar graphs, correlation heatmaps, and profit contribution breakdowns to enable rapid, data-driven decision-making.
+
+## Key Insights Captured
+* **Growth Trajectory:** Technology Sales grew by 116% from Jan ($12K) to Jun ($26K), outperforming Services growth.
+* **Profit Margin Correlation:** Strong positive correlation (0.98+) identified between sales volume and divisional profit margin across both lines.
+* **Peak Revenue Month:** June delivered the highest overall profit contribution (22.5% of total Q1/Q2 profit).
+
+## Tech Stack
+* **Language:** Python (`pandas`, `matplotlib`, `seaborn`)
+* **Visualization Tools:** Multi-panel Subplots, Heatmaps, Trend Line Charts, Bar Plots, Pie Charts
+* **Environment:** Google Colab
+
+## Business Impact
+Eliminates manual reporting overhead by instantly rendering publication-grade visual summaries for executive stakeholders.
+
 
