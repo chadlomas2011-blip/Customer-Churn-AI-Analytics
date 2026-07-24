@@ -65,4 +65,21 @@ Built an automated natural language processing (NLP) workflow pipeline using Pyt
 * **Environment:** Google Colab
 
 ## Strategic Business Value
-Reduces manual support triaging time by dynamically categorizing inbound requests in real time, allowing critical technical and billing escalations to reach support teams instantly.
+Reduces manual support triaging time by dynamically categorizing inbound requests in real time, allowing critical technical and billing escalations to reach support teams instantly.# 📊 Relational SQL Database & Customer Lifetime Value (LTV) Analytics Engine
+
+## Project Overview
+Engineered a relational SQL database schema in Python (`sqlite3`) to model multi-table customer purchasing behavior. Executed advanced SQL queries utilizing table joins, aggregation functions (`SUM`, `AVG`, `COUNT DISTINCT`), and custom mathematical metrics to extract Customer Lifetime Value (LTV) across distinct customer segments.
+
+## Key Market & Financial Findings
+* **Enterprise Segment:** Generated highest total revenue ($6,000.00) with a $3,000.00 LTV across 2 core enterprise accounts.
+* **SMB Segment:** Recorded high transaction frequency across 2 clients with an Average Order Value (AOV) of $333.33.
+* **Consumer Segment:** Lowest overall retention; identified as prime target for automated re-engagement workflows.
+
+## Tech Stack
+* **Language:** SQL (SQLite Dialect), Python (`sqlite3`, `pandas`)
+* **Database Concepts:** Relational Schema Design, Foreign Keys, `JOIN` Operations, `GROUP BY` Aggregations, Window Functions
+* **Environment:** Google Colab
+
+## Strategic Business Value
+Enables executive decision-makers to identify top-tier customer cohorts, optimize acquisition spend, and target high-LTV market segments without relying on manual reporting tools.
+
