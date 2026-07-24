@@ -49,3 +49,20 @@ Built an automated Python web-scraping and data extraction pipeline using `Beaut
 ## Strategic Business Value
 Demonstrates automated market research capability—enabling businesses to track competitor pricing, product availability, and positioning in real time without manual data collection.
 
+# 🤖 Automated AI Workflow & NLP Intent Classifier
+
+## Project Overview
+Built an automated natural language processing (NLP) workflow pipeline using Python and Hugging Face Transformers (`facebook/bart-large-mnli`). The pipeline ingests unstructured customer tickets, performs zero-shot classification to categorize intent and urgency, calculates confidence scores, and structures the output for automated downstream routing.
+
+## Key Workflow Results
+* **Processing Capabilities:** Zero-shot multi-class intent classification without model retraining
+* **Classification Categories:** Urgent Escalation, Billing Inquiry, Technical Issue, General Feedback
+* **Accuracy Metrics:** High-confidence routing across sample inbound tickets
+
+## Tech Stack
+* **Language:** Python (`pandas`, `transformers`, `torch`)
+* **AI Architecture:** Zero-Shot Natural Language Processing (BART Large MNLI Transformer)
+* **Environment:** Google Colab
+
+## Strategic Business Value
+Reduces manual support triaging time by dynamically categorizing inbound requests in real time, allowing critical technical and billing escalations to reach support teams instantly.
