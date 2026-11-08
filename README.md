@@ -1,102 +1,38 @@
-# Customer-Churn-AI-Analytics
-​📊 Customer Feedback & Churn Intelligence Engine
-​Business Problem
-An online subscription provider was losing customers (churning), but management didn't know whether the driver was pricing, service quality, or customer support.
-​Key Results & Business Impact
-​Analyzed 7,043 customer records to identify key churn drivers.
-​Found an overall churn rate of 26.5%, resulting in $139,000+ in lost monthly revenue.
-​Built an automated Python text-classification script that categorized customer complaints into Billing, Technical, or Support categories.
-​Tools Used
-​Data Cleaning & Analysis: Python (Pandas, NumPy), Google Colab
-​AI / Sentiment Analysis: Python (Text Parsing Rules / LLM API)
-​Data Visualization: Google Looker Studio
-​Key Insights & Recommendations
-​Month-to-Month Contracts: Customers on month-to-month plans had a 42% churn rate compared to under 11% for annual plans. Recommendation: Offer a 15% discount incentive to convert month-to-month users to annual plans.
-​Fiber Optic Issues: Fiber optic subscribers experienced higher churn due to initial setup confusion. Recommendation: Implement automated onboarding check-in emails during week 1.
-# 📊 Customer Feedback & Churn Intelligence Engine
+# Applied Data, SQL & AI Portfolio Projects
 
-## Business Overview
-An online subscription business was experiencing high customer churn, leading to significant monthly revenue loss. Management needed visibility into overall churn rates, revenue impact, and automated categorisation of customer feedback to address root causes.
+This repository is a collection of independent learning and portfolio projects. It is **not one single customer-churn study**. The notebooks cover SQL analysis, data visualization, web scraping, NLP/workflow experiments, and a B2B lead-pipeline prototype.
 
-## Key Results & Business Metrics
-* **Total Customers Analyzed:** 1,000 active customer records
-* **Overall Churn Rate:** 26.30%
-* **Monthly Revenue Lost:** $17,000+ per month
-* **AI Sentiment Engine:** Built an automated Python text-classification model that categorized customer feedback into **Billing & Pricing**, **Technical Issues**, and **Customer Support**.
+I am building on formal training in the Google Data Analytics Professional Certificate and Applied Python for Data Science and AI.
 
-## Tech Stack & Tools
-* **Language:** Python (`pandas`, `numpy`)
-* **Environment:** Google Colab (Mobile Cloud Execution)
-* **AI & Analytics Methods:** Data Wrangling, Descriptive Analytics, Rule-Based Natural Language Processing (NLP)
+## Project index
 
-## Key Business Recommendations
-1. **Billing Interventions:** Address the ~35% of customer complaints tied to unexpected price hikes by introducing automated billing alerts prior to contract renewals.
-2. **Technical Support Escalation:** Wi-Fi speed and stability issues account for high churn intent; flag recurring drops for prioritized tier-2 tech support.# 🕸️ Automated Web Scraper & Market Intelligence Engine
+| Notebook | Focus | Main tools | Data / scope |
+|---|---|---|---|
+| [SQL Customer LTV Analytics](SQL_Customer_LTV_Analytics.ipynb) | Relational queries, customer segments, revenue, average order value, and illustrative LTV | SQLite, Python, Pandas | Small, hard-coded sample dataset |
+| [SQL Dashboard](Colab_SQL_Dashboard.ipynb) | SQL aggregation and a regional revenue chart | SQLite, Matplotlib | Five hard-coded sample sales records |
+| [Executive Data Visualization Dashboard](Executive_Data_Visualization_Dashboard.ipynb) | Sales trends, profit comparisons, correlations, and monthly profit contribution | Pandas, Matplotlib, Seaborn | Six months of hard-coded illustrative figures |
+| [Web Scraper Market Intelligence](Web_Scraper_Market_Intelligence.ipynb) | Extract book titles, prices, and availability from a demo catalogue; summarize and export results | Requests, BeautifulSoup, Pandas, regex | First page of Books to Scrape demo catalogue |
+| [AI Automated Workflow Pipeline](AI_Automated_Workflow_Pipeline.ipynb) | AI-assisted workflow / text-processing experiment | Python; inspect notebook for full dependencies | Experimental notebook; review code and outputs before relying on claims |
+| [LangGraph Autonomous B2B Lead Pipeline](LangGraph_Autonomous_B2B_Lead_Pipeline.ipynb) | Five-stage lead workflow prototype: discovery, enrichment, qualification, outreach drafting, and simulated tracking | Python, LangGraph, Pandas, CSV, JSON | Sample records and simulated outputs |
+| [Construction Industry Lead Loss & Latency Analysis](Construction_Industry_Lead_Loss_%26_Latency_Analysis.ipynb) | Construction-related lead loss and response-latency analysis exercise | See notebook | Inspect notebook for dataset, method, and supported findings |
 
-## Project Overview
-Built an automated Python web-scraping and data extraction pipeline using `BeautifulSoup` and `requests`. The engine parses raw HTML from live e-commerce listings, cleans unstructured text into numerical data using regex, and calculates key pricing and inventory analytics.
+## Important notes on interpretation
 
-## Key Scraped Market Metrics
-* **Total Products Analyzed:** 20 live product listings
-* **Average Market Price:** $38.05
-* **Price Range:** $13.99 – $57.25
+- Several notebooks use **small, hard-coded or illustrative datasets**. Their outputs demonstrate analytical methods; they are not evidence of actual client, employer, or market performance.
+- The SQL LTV notebook creates its customer and order tables in memory from sample records. Its dollar amounts are illustrative, not real business revenue.
+- The dashboard notebook defines its six-month sales and profit figures directly in code. Its growth and correlation outputs should be understood as demonstrations using illustrative data.
+- The web-scraping notebook targets the public Books to Scrape demonstration website and processes the first page of listings. The recorded sample output shows 20 products, an average listed price of $38.05, and a range of $13.99–$57.25; these are sample-site observations, not broad market research.
+- The lead pipeline is a prototype using sample records and simulated workflow outputs. It does not establish real lead conversions or a production deployment.
+- This repository does **not currently provide a verified customer-churn dataset/notebook supporting the previously stated churn rates or revenue-loss estimates**. Those figures have therefore been removed rather than repeated without evidence.
 
-## Tech Stack
-* **Language:** Python (`pandas`, `BeautifulSoup`, `requests`, `re`)
-* **Environment:** Google Colab
-* **Data Processing:** HTML Parsing, String Cleaning, Regular Expressions (Regex), Descriptive Analytics
+## Skills demonstrated
 
-## Strategic Business Value
-Demonstrates automated market research capability—enabling businesses to track competitor pricing, product availability, and positioning in real time without manual data collection.
+Python fundamentals, data wrangling, SQL queries and joins, aggregation, exploratory analysis, data visualization, web scraping, text processing, workflow design, and communicating limitations of sample data.
 
-# 🤖 Automated AI Workflow & NLP Intent Classifier
+## Running the notebooks
 
-## Project Overview
-Built an automated natural language processing (NLP) workflow pipeline using Python and Hugging Face Transformers (`facebook/bart-large-mnli`). The pipeline ingests unstructured customer tickets, performs zero-shot classification to categorize intent and urgency, calculates confidence scores, and structures the output for automated downstream routing.
+Open a notebook in GitHub or Google Colab. Review the first code and data cells before running. The web scraper requires internet access and retrieves data from the demonstration site at runtime.
 
-## Key Workflow Results
-* **Processing Capabilities:** Zero-shot multi-class intent classification without model retraining
-* **Classification Categories:** Urgent Escalation, Billing Inquiry, Technical Issue, General Feedback
-* **Accuracy Metrics:** High-confidence routing across sample inbound tickets
+## About
 
-## Tech Stack
-* **Language:** Python (`pandas`, `transformers`, `torch`)
-* **AI Architecture:** Zero-Shot Natural Language Processing (BART Large MNLI Transformer)
-* **Environment:** Google Colab
-
-## Strategic Business Value
-Reduces manual support triaging time by dynamically categorizing inbound requests in real time, allowing critical technical and billing escalations to reach support teams instantly.# 📊 Relational SQL Database & Customer Lifetime Value (LTV) Analytics Engine
-
-## Project Overview
-Engineered a relational SQL database schema in Python (`sqlite3`) to model multi-table customer purchasing behavior. Executed advanced SQL queries utilizing table joins, aggregation functions (`SUM`, `AVG`, `COUNT DISTINCT`), and custom mathematical metrics to extract Customer Lifetime Value (LTV) across distinct customer segments.
-
-## Key Market & Financial Findings
-* **Enterprise Segment:** Generated highest total revenue ($6,000.00) with a $3,000.00 LTV across 2 core enterprise accounts.
-* **SMB Segment:** Recorded high transaction frequency across 2 clients with an Average Order Value (AOV) of $333.33.
-* **Consumer Segment:** Lowest overall retention; identified as prime target for automated re-engagement workflows.
-
-## Tech Stack
-* **Language:** SQL (SQLite Dialect), Python (`sqlite3`, `pandas`)
-* **Database Concepts:** Relational Schema Design, Foreign Keys, `JOIN` Operations, `GROUP BY` Aggregations, Window Functions
-* **Environment:** Google Colab
-
-## Strategic Business Value
-Enables executive decision-makers to identify top-tier customer cohorts, optimize acquisition spend, and target high-LTV market segments without relying on manual reporting tools.# 📈 Executive Business Intelligence & Data Visualization Dashboard
-
-## Project Overview
-Engineered an automated data visualization engine in Python (`matplotlib`, `seaborn`, `pandas`) to transform multi-divisional financial and sales metrics into an executive-ready dashboard. Generated line charts, comparative bar graphs, correlation heatmaps, and profit contribution breakdowns to enable rapid, data-driven decision-making.
-
-## Key Insights Captured
-* **Growth Trajectory:** Technology Sales grew by 116% from Jan ($12K) to Jun ($26K), outperforming Services growth.
-* **Profit Margin Correlation:** Strong positive correlation (0.98+) identified between sales volume and divisional profit margin across both lines.
-* **Peak Revenue Month:** June delivered the highest overall profit contribution (22.5% of total Q1/Q2 profit).
-
-## Tech Stack
-* **Language:** Python (`pandas`, `matplotlib`, `seaborn`)
-* **Visualization Tools:** Multi-panel Subplots, Heatmaps, Trend Line Charts, Bar Plots, Pie Charts
-* **Environment:** Google Colab
-
-## Business Impact
-Eliminates manual reporting overhead by instantly rendering publication-grade visual summaries for executive stakeholders.
-
-
+Created by Chad Lomas as independent learning and portfolio work. These projects were not paid client engagements.
