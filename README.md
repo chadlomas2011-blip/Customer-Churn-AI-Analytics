@@ -6,7 +6,7 @@ This repository is a collection of independent learning and portfolio projects. 
 
 | Folder / notebook | Focus | Main tools | Data / scope |
 |---|---|---|---|
-| [SQL Customer LTV Analytics](sql/SQL_Customer_LTV_Analytics.ipynb) | Relational queries, customer segments, revenue, average order value, and illustrative LTV | SQLite, Python, Pandas | Small, hard-coded sample dataset |
+| [Customer Churn Analysis — Synthetic Demonstration](customer-churn-synthetic-demo.ipynb) | Reproducible data audit, EDA, baseline comparison, logistic regression, and model interpretation | Python, Pandas, NumPy, scikit-learn, Matplotlib | 3,000 generated synthetic records; no real customer data |\n| [SQL Customer LTV Analytics](sql/SQL_Customer_LTV_Analytics.ipynb) | Relational queries, customer segments, revenue, average order value, and illustrative LTV | SQLite, Python, Pandas | Small, hard-coded sample dataset |
 | [SQL Dashboard](sql/Colab_SQL_Dashboard.ipynb) | SQL aggregation and a regional revenue chart | SQLite, Matplotlib | Five hard-coded sample sales records |
 | [Executive Data Visualization Dashboard](visualization/Executive_Data_Visualization_Dashboard.ipynb) | Sales trends, profit comparisons, correlations, and monthly profit contribution | Pandas, Matplotlib, Seaborn | Six months of hard-coded illustrative figures |
 | [Web Scraper Market Intelligence](web-scraping/Web_Scraper_Market_Intelligence.ipynb) | Extract book titles, prices, and availability from a demo catalogue | Requests, BeautifulSoup, Pandas, regex | First page of Books to Scrape demo catalogue |
@@ -25,11 +25,11 @@ This repository is a collection of independent learning and portfolio projects. 
 - The dashboard notebook defines its six-month sales and profit figures directly in code. Its growth and correlation outputs should be understood as demonstrations using illustrative data.
 - The web-scraping notebook targets the public Books to Scrape demonstration website and processes the first page of listings. Its output shows 20 products, an average listed price of $38.05, and a range of $13.99–$57.25; these are sample-site observations, not broad market research.
 - The lead pipeline is a prototype using sample records and simulated workflow outputs. It does not establish real lead conversions or a production deployment.
-- This repository does **not currently provide a verified customer-churn dataset/notebook supporting previously stated churn rates or revenue-loss estimates**. Those figures have been removed rather than repeated without evidence.
+- The new customer-churn notebook is explicitly a **synthetic demonstration**, not a real-world churn study. Its generated labels are based on assumptions defined in code. It does not support claims about actual customer churn rates, revenue loss, or business performance. A real-world case study still requires a documented public or authorized dataset.
 
 ## Skills demonstrated
 
-Python fundamentals, data wrangling, SQL queries and joins, aggregation, exploratory analysis, data visualization, web scraping, workflow design, and communicating limitations of sample data.
+Python fundamentals, data wrangling, SQL queries and joins, aggregation, exploratory analysis, data visualization, scikit-learn classification pipelines, model evaluation, web scraping, workflow design, and communicating limitations of synthetic and sample data.
 
 ## Running the notebooks
 
